@@ -5,18 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
 
     <form>
+        <div class="container p-5 justify-content-center">
+            <div class="row">
 
-        <input type="number" id="chilometri" placeholder="inserisci km" value="12" >
-        <input type="number" id="eta" placeholder="isnerisci etá" value="18">
+                <div class="col">
+                    <label for="">Nome Cognome</label> <br>
+                    <input type="text" id="name" placeholder="Nome Cognome" value="Filippo Zuppini">
+                </div>
 
-        <button type="submit" id="calcola">Calcola</button>
+                <div class="col">
+                    <label>Numero di chilometri:</label> <br>
+                    <input type="number" id="chilometri" placeholder="inserisci km" value="12">        
+                </div>
+                
+                <div class="col">
+                    <label>Etá:</label> <br>
+                    <input type="number" id="eta" placeholder="inserisci etá" value="30">
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <button type="submit" class="align-items-start" id="calcola">Calcola</button>
+                    <button type="" id="calcola">Annulla</button>
+
+                </div>
+
+            </div>
+
+        </div>
+        
+        
     </form>
-
-    <h3 id="risultato"></h3>
+    
+    <h3 id="resultPrice"></h3>
+    <h3 id="resultName"></h3>
 
 
 
