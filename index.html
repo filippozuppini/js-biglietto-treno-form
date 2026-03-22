@@ -7,34 +7,34 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
-<body class="bg-dark">
+<body class="bg-danger">
     <h2 class="text-center text-white mt-5">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
     
     <form>
-        <div class="container p-3 text-center">
+        <div class="container p-3 text-center bg-light">
             <div class="row">
 
                 <div class="col">
-                    <label for="" class="text-white">Nome Cognome</label> <br>
-                    <input type="text" id="name" placeholder="Nome Cognome" value="Filippo Zuppini">
+                    <label for="" class="">Nome Cognome</label> <br>
+                    <input type="text" class="form-control" id="name" placeholder="Nome Cognome">
                 </div>
 
                 <div class="col">
-                    <label class="text-white">Chilometri da percorrere:</label> <br>
-                    <input type="number" id="chilometri" placeholder="inserisci km" value="12">        
+                    <label class="">Chilometri da percorrere:</label> <br>
+                    <input type="number" class="form-control" id="chilometri" placeholder="inserisci km">        
                 </div>
                 
                 <div class="col">
-                    <label class="text-white">Fascia d'etá:</label> <br>
-                    <input type="number" id="eta" placeholder="inserisci etá" value="30">
+                    <label class="">Fascia d'etá:</label> <br>
+                    <input class="form-control" type="number" id="eta" placeholder="inserisci etá">
                 </div>
                 
             </div>
             <div class="row mt-3 text-center">
                 
                 <div class="col">
-                    <button type="submit" class="align-items-start px-3 py-1" id="calcola">Calcola</button>
-                    <button type="" class="px-3 py-1" id="calcola">Ripristina</button>
+                    <button type="submit" class="btn btn-primary px-3 py-1" id="calcola">Calcola</button>
+                    <button type="reset" class="btn btn-danger px-3 py-1" id="calcola">Ripristina</button>
                 </div>
 
             </div>
@@ -59,7 +59,6 @@
                 <h5 class="">Carrozza</h5>
                 <div class="d-flex">
                     <p>N. </p><p id="resultCarrozza">000</p>
-
                 </div>
             </div>
             <div class="col">

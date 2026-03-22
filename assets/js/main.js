@@ -37,7 +37,6 @@ const resultCP = document.getElementById('resultCP');
 
 
 const formEl = document.querySelector('form')
-// const bottoneEl = document.getElementById('calcola');
 
 
 
