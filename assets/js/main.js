@@ -31,6 +31,10 @@ const etaEl = document.getElementById('eta');
 const nameEl = document.getElementById('name');
 const resultPrice = document.getElementById('resultPrice');
 const resultName = document.getElementById('resultName');
+const resultCarrozza = document.getElementById('resultCarrozza');
+const resultCP = document.getElementById('resultCP');
+
+
 
 const formEl = document.querySelector('form')
 // const bottoneEl = document.getElementById('calcola');
@@ -62,13 +66,15 @@ formEl.addEventListener('submit', function (e){
     // console.log(ticket_price.toFixed(2));
 
 
-    // resultPrice.innerHTML = ticket_price.toFixed(2);
-    resultPrice.append(ticket_price.toFixed(2));
+    resultPrice.innerHTML = ticket_price.toFixed(2);
+    // resultPrice.append(ticket_price.toFixed(2));
 
-    // resultName.innerHTML = name.toString();
-    resultName.append(name);
+    resultName.innerHTML = name;
+    // resultName.append(name);
 
-    
+    resultCarrozza.innerHTML = Math.floor(Math.random() * 10) + 1;
+
+    resultCP.innerHTML = Math.floor(Math.random() * 100000) + 1;
 
 })
 
